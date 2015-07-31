@@ -18,8 +18,9 @@
       }
     </style>
     <script>
-      function test1(message) {
-        alert(message);
+      function test1(id) {
+        var doc = document.getElementById(id);
+        alert(doc.value);
       }
     </script>
   </head>
@@ -30,8 +31,8 @@
         <br/>
         A is for ...
         <br/>
-        <input type="text" name="answer1" />
-        <input type="submit" name="submit1" onclick="test1(answer1.value);" />
+        <input type="text" id="answer1" />
+        <input type="submit" name="submit1" onclick="test1('answer1');" />
       </div>
   </body>
 </html>
