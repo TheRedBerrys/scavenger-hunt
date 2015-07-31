@@ -18,8 +18,8 @@
       }
     </style>
     <script>
-      function test1() {
-        alert("You got it right!");
+      function test1(message) {
+        alert(message);
       }
     </script>
   </head>
@@ -31,7 +31,7 @@
         A is for ...
         <br/>
         <input type="text" name="answer1" />
-        <input type="submit" name="submit1" onclick="test1();" />
+        <input type="submit" name="submit1" onclick="test1(answer1.text);" />
       </div>
   </body>
 </html>
