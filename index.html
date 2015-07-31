@@ -17,6 +17,11 @@
         font-size: 300%;
       }
     </style>
+    <script>
+      function test1() {
+        alert("You got it right!");
+      }
+    </script>
   </head>
   <body>
       <p>Scavenger Hunt!</p>
@@ -26,7 +31,7 @@
         A is for ...
         <br/>
         <input type="text" name="answer1" />
-        <input type="submit" name="submit1" />
+        <input type="submit" name="submit1" onclick="test1();" />
       </div>
   </body>
 </html>
