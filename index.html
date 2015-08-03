@@ -32,7 +32,8 @@
     <script>
       function answer(id) {
         alert("Got to answer method");
-        var value = document.getElementById(id).value;
+        var textbox = document.getElementById(id);
+        var value = textbox.value;
         if (value.startsWith(id)) {
           alert("Yay! you did it!");
         } else {
