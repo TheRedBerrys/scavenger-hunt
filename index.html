@@ -35,12 +35,15 @@
       }
     </style>
     <script>
+      function nextChar(c) {
+        return String.fromCharCode(c.charCodeAt(0) + 1);
+      }
       function answer(id) {
         var textbox = document.getElementById(id);
         var value = textbox.value.substring(0,1).toLowerCase();
         alert(value);
         if (value == id) {
-          alert("Yay! you did it!");
+          alert(nextChar(id));
         } else {
           alert("Try again.");
         }
