@@ -37,9 +37,9 @@
     <script>
       function answer(id) {
         var textbox = document.getElementById(id);
-        var value = textbox.value.substring(0,1);
+        var value = textbox.value.substring(0,1).toLowerCase();
         alert(value);
-        if (value.equalsIgnoreCase(id)) {
+        if (value == id) {
           alert("Yay! you did it!");
         } else {
           alert("Try again.");
