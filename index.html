@@ -31,10 +31,8 @@
     </style>
     <script>
       function answer(id) {
-        alert("Got to answer method");
         var textbox = document.getElementById(id);
-        alert(textbox.id);
-        var value = textbox.value;
+        var value = textbox.value.toLowerCase();
         alert(value);
         if (value.startsWith(id)) {
           alert("Yay! you did it!");
