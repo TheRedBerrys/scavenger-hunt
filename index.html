@@ -24,6 +24,11 @@
         text-align: center;
         font-size: 300%;
       }
+      a
+      {
+        font-size: 250%;
+        margin: 5px;
+      }
       input[type="text"] {
         height: 50px;
         width: 200px;
@@ -34,7 +39,8 @@
         var textbox = document.getElementById(id);
         var value = textbox.value.toLowerCase();
         alert(value);
-        if (value.startsWith(id)) {
+        alert(value.substring(0,1));
+        if (id.equals(value.substring(0,1))) {
           alert("Yay! you did it!");
         } else {
           alert("Try again.");
