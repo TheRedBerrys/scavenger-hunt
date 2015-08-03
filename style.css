@@ -3,8 +3,6 @@ div.container
     margin: auto;
     width: 80%;
     text-align: center;
-    border-style: solid;
-    border-width: medium;
     font-size: 200%;
 }
 
