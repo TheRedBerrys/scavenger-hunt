@@ -22,7 +22,7 @@ function answer(id) {
 
 function startup() {
     alert("Hi Rachel. It's me, Jason. We're going to play a fun game!");
-    alert("For each letter in the alphabet, take a selfie with something that starts with that letter, and sent it to me!");
-    alert("But each item has to be at the correct location! Click the links to get directions to each location.");
+    alert("For each letter in the alphabet, take a selfie with something that starts with that letter, and send it to me!");
+    alert("But each item has to be at the correct location! Tap the big links to get directions to each location.");
     alert("Don't forget to send me those selfies! I love you!");
 }
