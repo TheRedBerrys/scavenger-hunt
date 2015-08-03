@@ -44,7 +44,9 @@
         if (value == id) {
           var nextid = "div" + nextChar(id);
           var div = document.getElementById(nextid);
-          div.className = "show";
+          if (div !== null) {
+            div.className = "show";
+          }
         } else {
           alert("Try again.");
         }
