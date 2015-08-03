@@ -26,7 +26,7 @@
       }
       a
       {
-        font-size: 250%;
+        font-size: 150%;
         margin: 5px;
       }
       input[type="text"] {
@@ -37,10 +37,9 @@
     <script>
       function answer(id) {
         var textbox = document.getElementById(id);
-        var value = textbox.value.toLowerCase();
+        var value = textbox.value.toLowerCase().substring(0,1);
         alert(value);
-        alert(value.substring(0,1));
-        if (id.equals(value.substring(0,1))) {
+        if (id.equals(value)) {
           alert("Yay! you did it!");
         } else {
           alert("Try again.");
