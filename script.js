@@ -21,8 +21,9 @@ function answer(id) {
 }
 
 function startup() {
-    alert("Hi Rachel. It's me, Jason. We're going to play a fun game!");
+    alert("Hi Rachel! It's me, Jason. We're going to play a fun game!");
     alert("For each letter in the alphabet, take a selfie with something that starts with that letter, and send it to me!");
-    alert("But each item has to be at the correct location! Tap the big links to get directions to each location.");
+    alert("But each item has to be at the correct location! Tap the big link to get directions to the first location.");
+    alert("Stay at that location, finding items for each letter, until you get a link to the next location.");
     alert("Don't forget to send me those selfies so I can see your pretty face! I love you!");
 }
