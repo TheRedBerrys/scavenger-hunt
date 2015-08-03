@@ -44,10 +44,9 @@
         alert(value);
         if (value == id) {
           var nextid = "div" + nextChar(id);
-          alert(nextid);
           var div = document.getElementById(nextid);
           alert(div.id);
-          div.class = "show";
+          div.className = "show";
         } else {
           alert("Try again.");
         }
