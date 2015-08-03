@@ -1,61 +1,8 @@
 <html>
   <head>
     <title>Scavenger Hunt!</title>
-    <style>
-      div.container
-      {
-        margin: auto;
-        width: 80%;
-        text-align: center;
-        border-style: solid;
-        border-width: medium;
-        font-size: 200%;
-      }
-      div.show
-      {
-        display: block;
-      }
-      div.noshow
-      {
-        display: none;
-      }
-      p
-      {
-        text-align: center;
-        font-size: 300%;
-      }
-      a
-      {
-        font-size: 150%;
-        padding: 10px;
-      }
-      input[type="text"] {
-        height: 50px;
-        width: 200px;
-      }
-    </style>
-    <script>
-      function nextChar(c) {
-        return String.fromCharCode(c.charCodeAt(0) + 1);
-      }
-      function answer(id) {
-        var textbox = document.getElementById(id);
-        if (textbox.value.length == 0) {
-          alert("Try again.");
-          return false;
-        }
-        var value = textbox.value.substring(0,1).toLowerCase();
-        if (value == id) {
-          var nextid = "div" + nextChar(id);
-          var div = document.getElementById(nextid);
-          if (div !== null) {
-            div.className = "show";
-          }
-        } else {
-          alert("Try again.");
-        }
-      }
-    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script language="javascript" type="text/javascript" src="script.js"></script>
   </head>
   <body>
       <p>Scavenger Hunt!</p>
@@ -89,6 +36,18 @@
           <form id="forme" onsubmit="answer('e'); return false;">
             E is for 
             <input type="text"  id="e" />
+          </form>
+        </div>
+        <div class="noshow" id="divf">
+          <form id="formf" onsubmit="answer('f'); return false;">
+            F is for 
+            <input type="text"  id="f" />
+          </form>
+        </div>
+        <div class="noshow" id="divg">
+          <form id="formg" onsubmit="answer('g'); return false;">
+            G is for 
+            <input type="text"  id="g" />
           </form>
         </div>
       </div>
