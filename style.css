@@ -4,6 +4,8 @@ div.container
     width: 80%;
     text-align: center;
     font-size: 200%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
 }
 
 div.show
@@ -18,12 +20,15 @@ div.noshow
 
 p
 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-weight: bold;
     text-align: center;
     font-size: 300%;
 }
 
 a
 {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-size: 150%;
     padding: 10px;
 }
