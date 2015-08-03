@@ -1,0 +1,36 @@
+div.container
+{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    font-size: 200%;
+}
+
+div.show
+{
+    display: block;
+}
+
+div.noshow
+{
+    display: none;
+}
+
+p
+{
+    text-align: center;
+    font-size: 300%;
+}
+
+a
+{
+    font-size: 150%;
+    padding: 10px;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 200px;
+}
