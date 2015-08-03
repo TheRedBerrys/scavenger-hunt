@@ -33,7 +33,9 @@
       function answer(id) {
         alert("Got to answer method");
         var textbox = document.getElementById(id);
+        alert(textbox.id);
         var value = textbox.value;
+        alert(value);
         if (value.startsWith(id)) {
           alert("Yay! you did it!");
         } else {
@@ -50,7 +52,7 @@
           <form id="forma" onsubmit="answer('a');">
             A is for 
             <input type="text"  id="a" />
-            <input type="submit" name="submit1" />
+            <input type="submit" />
           </form>
         </div>
       </div>
