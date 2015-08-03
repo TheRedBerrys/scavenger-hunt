@@ -18,6 +18,9 @@ function answer(id) {
     } else {
       alert("Try again.");
     }
+    if (id == "t") {
+        alert("Now go to the picnic area!");
+    }
 }
 
 function startup() {
