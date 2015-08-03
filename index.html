@@ -40,6 +40,10 @@
       }
       function answer(id) {
         var textbox = document.getElementById(id);
+        if (textbox.value.length == 0) {
+          alert("Try again.");
+          return false;
+        }
         var value = textbox.value.substring(0,1).toLowerCase();
         if (value == id) {
           var nextid = "div" + nextChar(id);
@@ -57,7 +61,7 @@
       <p>Scavenger Hunt!</p>
       <div class="container">
         <div class="show" id="diva">
-          <a href="http://maps.google.com/?q=46+lone+oak+ct+29045">Click here to start!</a>
+          <a href="http://maps.google.com/?q=6090+Garners+Ferry+Rd+29209">Click here to start!</a>
           <form id="forma" onsubmit="answer('a'); return false;">
             A is for 
             <input type="text"  id="a" />
