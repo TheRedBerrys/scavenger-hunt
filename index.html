@@ -2,11 +2,6 @@
   <head>
     <title>Scavenger Hunt!</title>
     <style>
-      a
-      {
-        text-align: center;
-        font-size: 200%;
-      }
       div.container
       {
         margin: auto;
@@ -31,29 +26,30 @@
       }
     </style>
     <script>
-      function test1(id) {
+      function answer(id) {
         var value = document.getElementById(id).value;
         if (value.startsWith(id)) {
           alert("Yay! you did it!");
         } else {
           alert("Try again.");
         }
+        alert(id++);
       }
     </script>
   </head>
   <body>
       <p>Scavenger Hunt!</p>
-      <a href="http://maps.google.com/?q=46+lone+oak+ct+29045">Click here to start!</a>
       <div class="container">
+        <a href="http://maps.google.com/?q=46+lone+oak+ct+29045">Click here to start!</a>
         <div class="show" id="diva">
           A is for 
           <input type="text" id="a" />
-          <input type="submit" name="submit1" onclick="test1('a');" />
+          <input type="submit" name="submit1" onclick="answer('a');" />
         </div>
         <div class="noshow" id="divb">
           B is for 
           <input type="text" id="b" />
-          <input type="submit" name="submit1" onclick="test1('b');" />
+          <input type="submit" name="submit1" onclick="answer('b');" />
         </div>
       </div>
   </body>
