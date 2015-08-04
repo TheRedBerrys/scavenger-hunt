@@ -2,14 +2,22 @@ function nextChar(c) {
     return String.fromCharCode(c.charCodeAt(0) + 1);
 }
 
+function isCorrect(input, id) {
+    if (id == "t") {
+        return input.toLowerCase() == "temple";
+    }
+    var value = input.substring(0,1).toLowerCase();
+    return value == id;
+}
+
 function answer(id) {
     var textbox = document.getElementById(id);
     if (textbox.value.length == 0) {
         alert("Try again.");
         return false;
     }
-    var value = textbox.value.substring(0,1).toLowerCase();
-    if (value == id) {
+    var value = textbox.value;
+    if (isCorrect(value, id)) {
         var nextid = "div" + nextChar(id);
         var div = document.getElementById(nextid);
         if (div !== null) {
