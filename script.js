@@ -23,11 +23,11 @@ function answer(id) {
         if (div !== null) {
             div.className = "show";
         }
+        if (id == "t") {
+            alert("Now go to the picnic area!");
+        }
     } else {
       alert("Try again.");
-    }
-    if (id == "t") {
-        alert("Now go to the picnic area!");
     }
 }
 
